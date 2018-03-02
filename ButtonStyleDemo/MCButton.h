@@ -9,10 +9,10 @@
 #import <UIKit/UIKit.h>
 
 typedef NS_ENUM(NSInteger, ImageStyle){
-    imageTop = 0,   // 图片上 标题下
+    imageTop,   // 图片上 标题下
     imageLeft,      // 图片左 标题右
     imageBottom,    // 图片下 标题上
-    imageRight,     // 图片右 标题左
+    imageRight     // 图片右 标题左
 };
 
 
