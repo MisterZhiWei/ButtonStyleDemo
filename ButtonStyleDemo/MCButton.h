@@ -8,16 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-typedef enum {
+typedef NS_ENUM(NSInteger, ImageStyle){
     imageTop = 0,   // 图片上 标题下
     imageLeft,      // 图片左 标题右
     imageBottom,    // 图片下 标题上
     imageRight,     // 图片右 标题左
-} ImageStyle;
+};
 
 
 @interface MCButton : UIButton
 
-@property (nonatomic, assign) ImageStyle buttonStyle;
+@property (nonatomic, assign, readwrite) ImageStyle buttonStyle;
 
 @end
