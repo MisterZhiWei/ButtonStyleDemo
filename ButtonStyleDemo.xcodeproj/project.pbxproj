@@ -18,6 +18,8 @@
 		1B32267D1EF3D9D000E0D500 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B32267C1EF3D9D000E0D500 /* Assets.xcassets */; };
 		1B3226801EF3D9D100E0D500 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B32267E1EF3D9D100E0D500 /* LaunchScreen.storyboard */; };
 		1B3226891EF3DA4800E0D500 /* MCButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B3226881EF3DA4800E0D500 /* MCButton.m */; };
+		1B9104C220F75C99006855BC /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B9104C120F75C98006855BC /* CoreText.framework */; };
+		1B9104C520F75CA0006855BC /* MCTextLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9104C420F75CA0006855BC /* MCTextLayer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,9 @@
 		1B3226811EF3D9D100E0D500 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B3226871EF3DA4800E0D500 /* MCButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCButton.h; sourceTree = "<group>"; };
 		1B3226881EF3DA4800E0D500 /* MCButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCButton.m; sourceTree = "<group>"; };
+		1B9104C120F75C98006855BC /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		1B9104C320F75CA0006855BC /* MCTextLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCTextLayer.h; sourceTree = "<group>"; };
+		1B9104C420F75CA0006855BC /* MCTextLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCTextLayer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B9104C220F75C99006855BC /* CoreText.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +72,7 @@
 			children = (
 				1B32266F1EF3D9D000E0D500 /* ButtonStyleDemo */,
 				1B32266E1EF3D9D000E0D500 /* Products */,
+				1B9104C020F75C98006855BC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,6 +87,8 @@
 		1B32266F1EF3D9D000E0D500 /* ButtonStyleDemo */ = {
 			isa = PBXGroup;
 			children = (
+				1B9104C320F75CA0006855BC /* MCTextLayer.h */,
+				1B9104C420F75CA0006855BC /* MCTextLayer.m */,
 				1B165E891EF535DC00DE10FC /* Images */,
 				1B3226871EF3DA4800E0D500 /* MCButton.h */,
 				1B3226881EF3DA4800E0D500 /* MCButton.m */,
@@ -102,6 +111,14 @@
 				1B3226711EF3D9D000E0D500 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1B9104C020F75C98006855BC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1B9104C120F75C98006855BC /* CoreText.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,6 +197,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B3226781EF3D9D000E0D500 /* ViewController.m in Sources */,
+				1B9104C520F75CA0006855BC /* MCTextLayer.m in Sources */,
 				1B3226891EF3DA4800E0D500 /* MCButton.m in Sources */,
 				1B3226751EF3D9D000E0D500 /* AppDelegate.m in Sources */,
 				1B3226721EF3D9D000E0D500 /* main.m in Sources */,
