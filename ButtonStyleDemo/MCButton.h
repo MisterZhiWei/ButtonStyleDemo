@@ -9,15 +9,16 @@
 #import <UIKit/UIKit.h>
 
 typedef NS_ENUM(NSInteger, ImageStyle){
-    imageTop,   // 图片上 标题下
-    imageLeft,      // 图片左 标题右
-    imageBottom,    // 图片下 标题上
-    imageRight     // 图片右 标题左
+    imageTop,    // The picture is under the title.
+    imageLeft,   // The picture is in the left title on the right.
+    imageBottom, // The title is under the picture.
+    imageRight   // The title is in the left picture on the right.
 };
 
 
 @interface MCButton : UIButton
 
 @property (nonatomic, assign, readwrite) ImageStyle buttonStyle;
+@property (nonatomic, assign) CGFloat    imgScale; ///<- scaling of the picture
 
 @end
