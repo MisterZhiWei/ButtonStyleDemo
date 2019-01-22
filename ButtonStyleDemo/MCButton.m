@@ -18,6 +18,7 @@
     if (self) {
         self.titleLabel.font = titleFont;
         self.buttonStyle = imageLeft;
+        self.imgScale = 0.5;
         self.titleLabel.textAlignment = NSTextAlignmentCenter;
     }
 
